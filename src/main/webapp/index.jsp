@@ -3,10 +3,17 @@
 <html>
 <head>
   <title>JSP - Hello World</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<h1><%= "Hello World!" %></h1>
+  <h1 style="text-align: center;margin: 30px;" >TP1 KADAR AHMED M2I</h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+
+
+  <div>
+    <a href="multiplication">Exercice 1</a>
+    <a href="Formulaire.html">Exercice 2</a>
+  </div>
+
 </body>
 </html>

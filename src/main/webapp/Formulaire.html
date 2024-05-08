@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Formulaire HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <div class="container">
+    <h2>Formulaire d'inscription</h2>
+    <form action="nomAge" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required> <br><br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required> <br><br>
+        <label for="date">Date :</label>
+        <input type="text" id="date" placeholder="jj/mm/aaaa" name="date" required> <br><br>
+        <input type="submit" value="Envoyer"> <br><br>
+    </form>
+</div>
 </body>
 </html>
